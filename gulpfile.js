@@ -13,14 +13,14 @@ const cssnano = require('cssnano');
 var browserSync = require('browser-sync').create();
 
 
-// // const plugins = [
-// //   autoprefixer({
-// //     browsers: ['last 2 version']
-// //   }),
-// //   // cssnano()
-// // ];
+const plugins = [
+  autoprefixer({
+    browsers: ['last 2 version']
+  }),
+  // cssnano()
+];
 
-// const sourcemaps = require('gulp-sourcemaps');
+const sourcemaps = require('gulp-sourcemaps');
 
 // function style() {
 //   return src('/dev/scss/main.scss')
@@ -59,17 +59,17 @@ var browserSync = require('browser-sync').create();
 
 function style() {
   return src('dev/scss/main.scss')
-    // .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(sass())
-    // .pipe(postcss(plugins))
-    // .pipe(sourcemaps.write())
+    .pipe(postcss(plugins))
+    .pipe(sourcemaps.write())
     .pipe(dest('prod/css'));
 }
 exports.style = style;
 
 
 function watcher() {
-  // watch('dev/scss/**/*.scss', style);
+  watch('dev/scss/**/*.scss', style);
   watch('dev/html/**/*.html', copyHtml);
 }
 

@@ -1,2 +1,16 @@
-span {
+.section {
+  background: url("../img/computer-911165_1920.jpg") no-repeat center center cover; }
+
+.section {
+  background: green; }
+
+form {
+  background: green; }
+
+form {
+  background: yellow; }
+
+* {
   color: red; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGlGQUFnRixFQUNqRjs7QUFFRDtFQUNFLGtCQUFpQixFQUNsQjs7QUFFRDtFQUNFLGtCQUFpQixFQUNsQjs7QUFFRDtFQUNFLG1CQUFrQixFQUNuQjs7QUFFRDtFQUNFLFdBQVUsRUFDWCIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zZWN0aW9uIHtcbiAgYmFja2dyb3VuZDogdXJsKCcuLi9pbWcvY29tcHV0ZXItOTExMTY1XzE5MjAuanBnJykgbm8tcmVwZWF0IGNlbnRlciBjZW50ZXIgY292ZXI7XG59XG5cbi5zZWN0aW9uIHtcbiAgYmFja2dyb3VuZDogZ3JlZW47XG59XG5cbmZvcm0ge1xuICBiYWNrZ3JvdW5kOiBncmVlbjtcbn1cblxuZm9ybSB7XG4gIGJhY2tncm91bmQ6IHllbGxvdztcbn1cblxuKiB7XG4gIGNvbG9yOiByZWQ7XG59Il19 */
